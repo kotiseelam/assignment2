@@ -1,5 +1,7 @@
+// studentForm.js
 import { useState } from 'react';
 
+// In this studentForm component, we handle form state and validation for adding new students
 export default function StudentForm({ addStudent }) {
     const [firstName, setFirstName] = useState('');
     const [lastName, setLastName] = useState('');
@@ -40,7 +42,7 @@ export default function StudentForm({ addStudent }) {
     const handleSubmit = (e) => {
         e.preventDefault();
         if (validateForm()) {
-            addStudent({ firstName, lastName, dob, grade: parseInt(grade) }); // Convert grade to a number
+            addStudent({ firstName, lastName, dob, grade: parseInt(grade) }); 
             setFirstName('');
             setLastName('');
             setDob('');

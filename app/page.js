@@ -5,13 +5,13 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import StudentList from './components/StudentList'; 
 import StudentForm from './components/StudentForm';
-import studentsData from './data/students.json'; // Adjust the path based on your folder structure
+import studentsData from './data/students.json'; // This is path to the data of list of 5 students
 
 function App() {
     const [students, setStudents] = useState([]);
 
     useEffect(() => {
-        setStudents(studentsData); // Set initial state with imported JSON data
+        setStudents(studentsData); // This is  initial state with imported JSON data
     }, []);
 
     const addStudent = (student) => {
