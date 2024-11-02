@@ -1,6 +1,7 @@
 // StudentCard.js
 import React from 'react';
 
+// In this StudentCard component, we display each student's information (name, date of birth, and grade) in a card format
 function StudentCard({ student }) {
     return (
         <div className="p-4 m-2 border rounded shadow-sm">
